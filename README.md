@@ -1,5 +1,9 @@
-# Mindustry Java Mod Template
-A Java Mindustry mod template that works on Android and PC. The Kotlin version of this mod can be seen [here](https://github.com/Anuken/MindustryKotlinModTemplate).
+# Paindustry
+Mindustry, except everything is 100x harder for the sake of being annoying.
+Similar to ithkuilia from [helplinedustry](https://github.com/helpll/helplinedustry) or [Communistry](https://github.com/Delta-Airlines-ig/Communistry).
+
+# Gameplay
+this'll be updated when i add gameplay fr fr
 
 ## Building for Desktop Testing
 
