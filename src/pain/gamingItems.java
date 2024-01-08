@@ -13,8 +13,10 @@ import static mindustry.content.Items.*;
 
 public class gamingItems{
     public static Item 
-    //other things
-    wroughtiron, hematite, castiron, pigiron, steel, hotwroughtiron, hotcastiron, hotpigiron, hotsteel;
+    //copper or bronze. unused for now
+  //  bronze, brass, zinc, tin, malachite,
+    //iron
+    spongeiron, wroughtiron, hematite, castiron, pigiron, steel;
     
 //   public static final Seq<Item> EarthItems = new Seq<>();
 //    public static final Seq<Item> Begone = new Seq<>();
@@ -38,39 +40,21 @@ public class gamingItems{
                 cost = 0.3f;
                 //hardness = 15;
        }};
-        pigiron = new Item("pig-iron", Color.valueOf("00f0ec")){{
-            localizedName = "Pig Iron";
-               description = "Garbage iron, used only to produce better types of iron.";
-                cost = 0.3f;
-                //hardness = 15;
-       }};
-        steel = new Item("steel", Color.valueOf("00f0ec")){{
-            localizedName = "Steel";
-               description = "Strong but expensive structural material, useful in many things";
-                cost = 0.3f;
-                //hardness = 15;
-       }};
-        hotwroughtiron = new Item("hot-wrought-iron", Color.valueOf("00f0ec")){{
-            localizedName = "Hot Wrought Iron";
-               description = "Heated Wrought Iron.";
-                cost = 0.1f;
-                //hardness = 15;
-       }};
-        hotcastiron = new Item("hot-cast-iron", Color.valueOf("00f0ec")){{
-            localizedName = "Hot Cast Iron";
-               description = "Hot Cast Iron";
+        spongeiron = new Item("sponge-iron", Color.valueOf("00f0ec")){{
+            localizedName = "Sponge Iron";
+               description = "Garbage iron, used only to produce wrought iron.";
                 cost = 0.3f;
                 //hardness = 15;
        }};
         pigiron = new Item("pig-iron", Color.valueOf("00f0ec")){{
             localizedName = "Pig Iron";
-               description = "Garbage iron, used only to produce better types of iron.";
+               description = "Garbage iron, used only to produce better types of iron. More efficent than sponge iron though...";
                 cost = 0.3f;
                 //hardness = 15;
        }};
         steel = new Item("steel", Color.valueOf("00f0ec")){{
             localizedName = "Steel";
-               description = "Strong but expensive structural material, useful in many things";
+               description = "Strong but expensive structural material, useful in many things.";
                 cost = 0.3f;
                 //hardness = 15;
        }};
