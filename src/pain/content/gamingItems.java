@@ -14,6 +14,7 @@ import static mindustry.content.Items.*;
 public class gamingItems{
     public static Item 
     stone, stoneBricks,
+    potassiumNitrate, 
     //copper or bronze. unused for now
     //brass, zinc, tin, malachite,
     //iron
@@ -21,6 +22,7 @@ public class gamingItems{
 
     //other
     wroughtironmechparts, wroughtironplates, castironmechparts, castironplates, 
+    gunpowder,
     shellCasing, bulletCasing
     ;
     
@@ -28,6 +30,18 @@ public class gamingItems{
 //    public static final Seq<Item> Begone = new Seq<>();
     
     public static void load(){
+        potassiumNitrate = new Item("potassium-nitrate", Color.valueOf("00f0ec")){{
+            localizedName = "Potassium Nitrate";
+               description = "Used as an oxidizer in gunpowder.";
+                cost = 0.1f;
+                //hardness = 15;
+       }};
+        gunpowder = new Item("gunpowder", Color.valueOf("00f0ec")){{
+            localizedName = "Gunpowder";
+               description = "Explosive powder. Made from coal and potassium nitrate.";
+                cost = 0.1f;
+                //hardness = 15;
+       }};
         shellCasing = new Item("shell-casing", Color.valueOf("00f0ec")){{
             localizedName = "Shell Casing";
                description = "An artillery shell casing made from cast iron, missing most of the components required to actually fire.";
