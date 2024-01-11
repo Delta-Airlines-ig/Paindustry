@@ -17,12 +17,40 @@ public class gamingItems{
     //copper or bronze. unused for now
   //  bronze, brass, zinc, tin, malachite,
     //iron
-    spongeiron, wroughtiron, hematite, castiron, pigiron, steel;
+    spongeiron, wroughtiron, hematite, castiron, pigiron, steel,
+
+    //other
+    wroughtironmechparts, wroughtironplates, castironmechparts, castironplates
+    ;
     
 //   public static final Seq<Item> EarthItems = new Seq<>();
 //    public static final Seq<Item> Begone = new Seq<>();
     
     public static void load(){
+        castironplates = new Item("cast-iron-plates", Color.valueOf("00f0ec")){{
+            localizedName = "Cast Iron Plates";
+               description = "plates for basic machinery made from cast iron";
+                cost = 0.1f;
+                //hardness = 15;
+       }};
+        castironmechparts = new Item("cast-iron-mechanical-parts", Color.valueOf("00f0ec")){{
+            localizedName = "Cast Iron Mechanical Parts";
+               description = "mechanical parts for basic machinery made from cast iron";
+                cost = 0.1f;
+                //hardness = 15;
+       }};
+        wroughtironplates = new Item("wrought-iron-plates", Color.valueOf("00f0ec")){{
+            localizedName = "Wrought Iron Plates";
+               description = "plates for basic machinery made from wrought iron";
+                cost = 0.1f;
+                //hardness = 15;
+       }};
+        wroughtironmechparts = new Item("wrought-iron-mechanical-parts", Color.valueOf("00f0ec")){{
+            localizedName = "Wrought Iron Mechanical Parts";
+               description = "mechanical parts for basic machinery made from wrought iron";
+                cost = 0.1f;
+                //hardness = 15;
+       }};
         stoneBricks = new Item("stone-bricks", Color.valueOf("00f0ec")){{
             localizedName = "Stone Bricks";
                description = "Fancy stone";
