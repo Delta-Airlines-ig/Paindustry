@@ -63,21 +63,21 @@ public class gamingBlocks{
     //ores
     oreIron, gStone,  //not done with uranium
     //walls
-    stoneWall,
+   // stoneWall,
     //transport
-    ironconveyor, allocator, interchange, span, surplussorter, shortagesorter, sorter, reversesorter, 
+   // ironconveyor, allocator, interchange, span, surplussorter, shortagesorter, sorter, reversesorter, 
     //storage
    // smalltank, largetank, smallsilo, largesilo, 
     //water drills
     //well, unneeded
     //drills
-    drillMechanical, 
+ //   drillMechanical, 
     //turrets
-    Gorunov, //lmg turret 
+//    Gorunov, //lmg turret 
     //cores
     //damagedshard, fortress, stronghold, bunker, unitcomputer, broadcaster,
     //power
-    steamgenerator, powerline, powerpylon, smallbattery; 
+  //  steamgenerator, powerline, powerpylon, smallbattery; 
 
     public static void load() {
       gStone = new OreBlock(gamingItems.stone){{
@@ -91,6 +91,23 @@ public class gamingBlocks{
             oreThreshold = 0.841f;
             oreScale = 25.580953f;
             variants = 2;
+        }};
+        steelSmelter = new GenericCrafter("steel-smelter"){{
+            localizedName = "Steel smelter";
+            requirements(Category.crafting, with(EarthItems.iron, 65, EarthItems.copper2, 40, EarthItems.lead2, 60));
+            outputItem = new ItemStack(EarthItems.steel, 3);
+	researchCostMultiplier = 2;
+            craftTime = 60f;
+            size = 3;
+            hasPower = true;
+            hasItems = true;
+            hasLiquids = true;
+            rotate = false;
+            solid = true;
+
+            consumePower(1.5f);
+            consumeItems(with(EarthItems.carbon, 2, EarthItems.iron, 5));
+
         }};
       
     }}
