@@ -42,13 +42,13 @@ public class gamingItems{
        }};
         spongeiron = new Item("sponge-iron", Color.valueOf("00f0ec")){{
             localizedName = "Sponge Iron";
-               description = "Garbage iron, used only to produce wrought iron.";
+               description = "Garbage iron, used only to produce wrought iron. Produced in bloomeries.";
                 cost = 0.3f;
                 //hardness = 15;
        }};
         pigiron = new Item("pig-iron", Color.valueOf("00f0ec")){{
             localizedName = "Pig Iron";
-               description = "Garbage iron, used only to produce better types of iron. More efficent than sponge iron though...";
+               description = "Garbage iron, used only to produce better types of iron. Produced from blast furnaces.";
                 cost = 0.3f;
                 //hardness = 15;
        }};
