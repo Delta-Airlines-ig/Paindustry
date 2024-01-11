@@ -15,18 +15,31 @@ public class gamingItems{
     public static Item 
     stone, stoneBricks,
     //copper or bronze. unused for now
-  //  bronze, brass, zinc, tin, malachite,
+    //brass, zinc, tin, malachite,
     //iron
     spongeiron, wroughtiron, hematite, castiron, pigiron, steel,
 
     //other
-    wroughtironmechparts, wroughtironplates, castironmechparts, castironplates
+    wroughtironmechparts, wroughtironplates, castironmechparts, castironplates, 
+    shellCasing, bulletCasing
     ;
     
 //   public static final Seq<Item> EarthItems = new Seq<>();
 //    public static final Seq<Item> Begone = new Seq<>();
     
     public static void load(){
+        shellCasing = new Item("shell-casing", Color.valueOf("00f0ec")){{
+            localizedName = "Shell Casing";
+               description = "An artillery shell casing made from cast iron, missing most of the components required to actually fire.";
+                cost = 0.1f;
+                //hardness = 15;
+       }};
+        bulletCasing = new Item("bullet-casing", Color.valueOf("00f0ec")){{
+            localizedName = "Bullet Casing";
+               description = "Simple bullet casing made from Wrought iron, used in ammunition production.";
+                cost = 0.1f;
+                //hardness = 15;
+       }};
         castironplates = new Item("cast-iron-plates", Color.valueOf("00f0ec")){{
             localizedName = "Cast Iron Plates";
                description = "plates for basic machinery made from cast iron";
