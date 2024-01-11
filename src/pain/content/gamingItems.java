@@ -13,6 +13,7 @@ import static mindustry.content.Items.*;
 
 public class gamingItems{
     public static Item 
+    stone, stoneBricks,
     //copper or bronze. unused for now
   //  bronze, brass, zinc, tin, malachite,
     //iron
@@ -22,6 +23,18 @@ public class gamingItems{
 //    public static final Seq<Item> Begone = new Seq<>();
     
     public static void load(){
+        stoneBricks = new Item("stone-bricks", Color.valueOf("00f0ec")){{
+            localizedName = "Stone Bricks";
+               description = "Fancy stone";
+                cost = 0.1f;
+                //hardness = 15;
+       }};
+        stone = new Item("stone", Color.valueOf("00f0ec")){{
+            localizedName = "Stone";
+               description = "Stone";
+                cost = 0.1f;
+                //hardness = 15;
+       }};
         wroughtiron = new Item("wrought-iron", Color.valueOf("00f0ec")){{
             localizedName = "Wrought Iron";
                description = "Early iron in the process, used in making some structures and better resources";
