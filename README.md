@@ -1,6 +1,6 @@
 # Paindustry
 Mindustry, except everything is 100x harder for the sake of being annoying.  
-Similar to ithkuilia from [helplinedustry](https://github.com/helpll/helplinedustry) or general gameplay from [Communistry](https://github.com/Delta-Airlines-ig/Communistry).
+Similar to ithkuilia from [helplinedustry](https://github.com/helpll/helplinedustry) or general gameplay from [Communistry](https://github.com/Delta-Airlines-ig/Communistry).  
 also required [multicrafter](https://github.com/liplum/MultiCrafterLib/releases/tag/v1.8)!
 
 # Gameplay
