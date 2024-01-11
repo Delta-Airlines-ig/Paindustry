@@ -23,13 +23,26 @@ public class gamingItems{
     //other
     wroughtironmechparts, wroughtironplates, castironmechparts, castironplates, 
     gunpowder,
-    shellCasing, bulletCasing
+    shellCasing, bulletCasing, 
+    artilleryShell, ammunition
     ;
     
 //   public static final Seq<Item> EarthItems = new Seq<>();
 //    public static final Seq<Item> Begone = new Seq<>();
     
     public static void load(){
+        ammunition = new Item("ammunition", Color.valueOf("00f0ec")){{
+            localizedName = "Ammunition";
+               description = "Ammunition used in smaller guns";
+                cost = 0.1f;
+                //hardness = 15;
+       }};
+         artilleryShell = new Item("artillery-shell", Color.valueOf("00f0ec")){{
+            localizedName = "Artillery Shell";
+               description = "Explosive shell fired from artillery or large cannons";
+                cost = 0.1f;
+                //hardness = 15;
+       }};
         potassiumNitrate = new Item("potassium-nitrate", Color.valueOf("00f0ec")){{
             localizedName = "Potassium Nitrate";
                description = "Used as an oxidizer in gunpowder.";
